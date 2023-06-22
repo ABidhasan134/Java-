@@ -19,7 +19,7 @@ public class ArrayMulti {
             }
             
         }
-        System.out.println("Enter 2nd Matrix:");
+        System.out.print("Enter 2nd Matrix:");
         for(int i=0;i<=2;i++ )
         {
             for(int j=0;j<=2;j++)
@@ -29,14 +29,16 @@ public class ArrayMulti {
         }
 
 
-        // here is 
+        // here is main equation of Matrix
         for(int i=0;i<=2;i++)
         {
             for(int j=0;j<=2;j++)
             {
+                //every time we get new colume our row will be 0
                 c[i][j]=0;
                 for(int k=0;k<=2;k++)
-                {
+                {//k is for the multipul the element
+
                     c[i][j]=c[i][j]+a[i][k]*b[k][j];
                 }
             }
